@@ -15,7 +15,7 @@
                                 <div class="flex justify-center items-center">
                                         <img src="./assets/Group.png" alt="">
                                         <div>
-                                                <h1 class="text-xl font-bold">$ <span>4500</span></h1>
+                                               <h1 class="font-bold text-xl text-black">$ <span id="mian-balece"> 4500</span></h1>
                                                 <p class="text-base">Availabel Blace</p>
                                         </div>
                                 </div>
@@ -54,9 +54,35 @@
                                 </div>
                         </div>
 
-                        <h1>Add Money</h1>
+                        <h1 class="text-xl font-bold mt-10 mb-5">Add Money</h1>
+
+                        <div class="card bg-[#FFFFFF] rounded-2xl w-full max-w-sm shrink-0 shadow-2xl ">
+                                <form class="card-body ">
+                                        <legend class="fieldset-label text-base text-black">Select Bnak</legend>
+                                        <select class="select select-ghost input rounded-3xl bg-[#F4F5F7] border-none " required>
+                                                <option disabled selected>Select Bnak</option>
+                                                <option value="Bkash">Bkash</option>
+                                                <option value="Nagod">Nagod</option>
+                                                <option value="DBBL">DBBL</option>
+                                        </select>
+                                        <fieldset class="fieldset">
+                                                <label class="fieldset-label text-base text-black">Mobile Number </label>
+                                                <input id="account-number" type="number" class="input rounded-3xl bg-[#F4F5F7] border-none"
+                                                        placeholder="Enter your mobile number" required />
+                                                <label class="fieldset-label text-base text-black">Enter Your Amount</label>
+                                                <input id="amount" type="number" class="input rounded-3xl bg-[#F4F5F7] border-none"
+                                                        placeholder="Enter your Amount" required />
+                                                <label class="fieldset-label text-base text-black">4 digit pin </label>
+                                                <input id="pin" type="text" class="input rounded-3xl bg-[#F4F5F7] border-none"
+                                                        placeholder="enter your 4 digit pin " required />
+                                                <button id="add-monye"
+                                                        class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none text-lg text-white">Add Money</button>
+                                        </fieldset>
+                                </form>
+                        </div>
 
                 </main>
         </section>
+        <script src="./Script/add-money.js"></script>
 </body>
 </html>
